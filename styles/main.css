@@ -1,0 +1,93 @@
+
+
+.container {
+  background-color: #343740;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.container-stars {
+  position: static;
+  width: 100%;
+  height: 83%;
+  /* margin: auto; */
+}
+.circle {
+  background-color: white,
+  border-radius: 50%/50%,
+  position: absolute,
+  float: none,
+  width: 0.15rem;
+  height: 0.15rem;
+  margin-left: 20%,
+  margin-top: 20%
+}
+
+@keyframes pulse {
+  0% {
+    opacity:0;
+  }
+  40% {
+    /* opacity: 1; */
+    /* box-shadow: 0 0 14px red 100%; */
+  }
+
+  50% {
+    opacity: 1;
+  }
+  80% {
+    /* box-shadow: 0 0 14px #fff 100%; */
+  }
+  100% {
+    opacity: 0;
+    /* box-shadow: 0 0 14px red 20%; */
+  }
+}
+
+#add-star-button {
+  /* float: right; */
+  bottom: 15%;
+  /* padding-top: 5%; */
+  width: 2.3em;
+  height: 2.3em;
+  border-width: 0px;
+  border-radius: 100% 100%;
+  background-color: navy;
+  color: white;
+  font-size: 1.4em;
+  box-shadow: 0 10px 12px 0px rgba(0,0,0,.35);
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  z-index: 100;
+  transition: all 150ms;
+
+}
+
+#add-star-button:hover{
+  background-color: #041657;
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  outline: none;
+  color: rgba(255,255,255,.7);
+  box-shadow: 0 5px 8px 0px rgba(0,0,0,.5);
+}
+
+#add-star-button:active {
+  background-color: rgb(0, 0, 177);
+  outline: none;
+  color: rgba(255,255,255,1);
+  /* color:rgb(225,215,215); */
+}

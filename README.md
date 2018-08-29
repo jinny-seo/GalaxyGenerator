@@ -1,2 +1,0 @@
-# GalaxyGenerator
-Created with CodeSandbox
